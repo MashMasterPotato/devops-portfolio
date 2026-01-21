@@ -1,68 +1,69 @@
 # DevOps / Cloud Portfolio — Marcel
 
 I’m transitioning into **DevOps / Cloud** after working as an **Application Manager** and currently as a **Network Security Engineer**.  
-This portfolio demonstrates hands-on skills in **cloud infrastructure, containers, CI/CD, Kubernetes, IaC, and DevSecOps** with a strong focus on **security and cost control**.
+This portfolio demonstrates hands-on skills in **cloud and hybrid infrastructure, containers, CI/CD, Kubernetes, IaC, and DevSecOps**, with a strong focus on **security, automation, and cost control**.
+
+I work **local-first** and run real Kubernetes environments using **k3s** on **Raspberry Pi** and **macOS**, applying the same patterns used in managed cloud platforms.
 
 ## What you’ll find here
-- Practical projects with **clean READMEs**, reproducible steps, and “why” explanations
-- A focus on **secure-by-default** infrastructure and deployments
-- **Cost-safe** usage (local-first, short-lived cloud resources)
+- Practical projects with **clean READMEs**, reproducible steps, and clear “why” explanations
+- **Secure-by-default** infrastructure, node hardening, and deployments
+- **Automation-first** workflows using Ansible, CI/CD, Helm, and Terraform
+- **Cost-safe** usage: local environments and short-lived cloud resources only
 
 ## Skills demonstrated
-- **Cloud:** IAM, networking, compute, storage, logging/monitoring (AWS or Azure)
-- **Linux & scripting:** bash, services, troubleshooting
+- **Cloud & Hybrid Infrastructure:** IAM, networking, compute, storage, logging/monitoring (AWS or Azure concepts)
+- **Linux & automation:** bash, services, troubleshooting, **Ansible (idempotent configuration)**
 - **Containers:** Docker, registries, image hardening
-- **CI/CD:** GitHub Actions pipelines, secrets, automated builds/deployments
-- **Kubernetes:** manifests, ingress, config/secrets, troubleshooting
-- **Helm:** templating, values, versioned releases, rollback
-- **IaC:** Terraform provisioning and teardown workflows
-- **DevSecOps:** least privilege, scanning, secure configs
+- **CI/CD:** GitHub Actions pipelines, secrets management, automated builds & deployments
+- **Kubernetes:** k3s (local & bare metal), manifests, ingress, config/secrets, troubleshooting
+- **Helm:** templating, values, versioned releases, rollback strategies
+- **Infrastructure as Code:** Terraform provisioning and teardown workflows
+- **DevSecOps:** least privilege, image scanning, secure defaults, policy-driven design
 
 ## Projects (overview)
-> Each project has: goal → architecture → steps → key decisions → improvements.
+> Each project includes: goal → architecture → steps → key decisions → improvements.
 
-1. **Cloud Infrastructure Basics**  
-   Secure VM + networking + IAM fundamentals (cost-safe).  
+1. **Infrastructure Basics (Cloud & Bare Metal)**  
+   Secure VM and node setup, networking, and IAM fundamentals with a cost-aware approach.  
    → `projects/cloud-infra-basics.md`
 
 2. **Containerized App**  
-   Dockerfile (multi-stage), non-root, healthchecks.  
+   Dockerfile (multi-stage), non-root execution, healthchecks.  
    → `projects/containerized-app.md`
 
 3. **CI/CD Pipeline**  
-   Automated build/test/push with secrets handling.  
+   Automated build, test, and image publishing with proper secrets handling.  
    → `projects/ci-cd-pipeline.md`
 
-4. **Kubernetes Manifests (Raw YAML)**  
-   Deploy app with Deployment/Service/Ingress/ConfigMap/Secret.  
+4. **Kubernetes on k3s (Raw Manifests)**  
+   Application deployment on k3s using Deployment, Service, Ingress, ConfigMap, and Secret.  
    → `projects/kubernetes-manifests.md`
 
 5. **Helm Chart**  
-   Refactor raw manifests into Helm with dev/prod values + rollback.  
+   Refactor raw Kubernetes manifests into a reusable Helm chart with dev/prod values and rollback support.  
    → `projects/helm-chart.md`
 
 6. **Terraform Platform**  
-   Provision infra with Terraform; apply + destroy workflows.  
+   Infrastructure provisioning using Terraform with apply/destroy workflows and cost controls.  
    → `projects/terraform-platform.md`
 
 7. **DevSecOps Tooling**  
-   Scanning, policies, and security enhancements (optional Go tooling).  
+   Security scanning, policy enforcement, and hardening practices (optional Go-based tooling).  
    → `projects/devsecops-tooling.md`
 
 ## How to run projects
-Each project repo includes:
+Each project repository includes:
 - prerequisites
 - setup steps
 - commands to run
 - teardown steps (where applicable)
 
 ## Cost & safety notes
-- Local-first approach for Kubernetes (kind/minikube) to keep costs near zero
-- Cloud resources are created only when needed and destroyed immediately
+- Local-first Kubernetes using k3s (Raspberry Pi and macOS) to keep costs near zero
+- Cloud resources are created only when required and destroyed immediately
 - Secrets are never committed to git
 
 ## Contact
-- LinkedIn: <LINK>
-- Email: <EMAIL>
-- CV: <LINK if you have one>
-
+- LinkedIn: tbd
+- CV: tbd
