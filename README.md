@@ -1,56 +1,73 @@
 # DevOps / Cloud Portfolio — Marcel
 
-I’m transitioning into **DevOps / Cloud** after working as an **Application Manager** and currently as a **Network Security Engineer**.  
-This portfolio demonstrates hands-on skills in **cloud and hybrid infrastructure, containers, CI/CD, Kubernetes, IaC, and DevSecOps**, with a strong focus on **security, automation, and cost control**.
+I’m transitioning into **DevOps / Cloud / Platform Engineering** after working as an **Application Manager** and currently as a **Network Security Engineer**.  
+This portfolio demonstrates hands-on experience across **infrastructure fundamentals, automation, Kubernetes platforms, CI/CD, and DevSecOps**, with a strong focus on **security, reliability, and cost control**.
 
-I work **local-first** and run real Kubernetes environments using **k3s** on **Raspberry Pi** and **macOS**, applying the same patterns used in managed cloud platforms.
+I follow a **local-first, automation-driven** approach and run real Kubernetes environments using **k3s** on **Raspberry Pi** and **macOS**, applying the same design principles used in managed cloud platforms.
+
+---
 
 ## What you’ll find here
-- Practical projects with **clean READMEs**, reproducible steps, and clear “why” explanations
-- **Secure-by-default** infrastructure, node hardening, and deployments
-- **Automation-first** workflows using Ansible, CI/CD, Helm, and Terraform
-- **Cost-safe** usage: local environments and short-lived cloud resources only
+- Practical projects with **clean READMEs**, diagrams, and clear “why” explanations  
+- **Infrastructure-first thinking** before automation and platforms  
+- **Configuration management** using Ansible for repeatable node bootstrapping  
+- **Kubernetes platform engineering** using k3s, Helm, and CI/CD  
+- **Security-by-default** and **cost-aware** design choices  
+
+---
 
 ## Skills demonstrated
-- **Cloud & Hybrid Infrastructure:** IAM, networking, compute, storage, logging/monitoring (AWS or Azure concepts)
+- **Infrastructure fundamentals:** networking, access models, firewalling, resource constraints (cloud & bare metal)
 - **Linux & automation:** bash, services, troubleshooting, **Ansible (idempotent configuration)**
-- **Containers:** Docker, registries, image hardening
-- **CI/CD:** GitHub Actions pipelines, secrets management, automated builds & deployments
+- **Containers:** Docker, image hardening, registries
+- **CI/CD:** GitHub Actions pipelines, secrets management, automated build & deploy workflows
 - **Kubernetes:** k3s (local & bare metal), manifests, ingress, config/secrets, troubleshooting
-- **Helm:** templating, values, versioned releases, rollback strategies
-- **Infrastructure as Code:** Terraform provisioning and teardown workflows
-- **DevSecOps:** least privilege, image scanning, secure defaults, policy-driven design
+- **Helm:** templating, environment-specific values, versioned releases, rollback strategies
+- **Infrastructure as Code:** Terraform concepts, modular design, apply/destroy workflows
+- **DevSecOps:** least privilege, image scanning, secure defaults, policy-aware design
 
-## Projects (overview)
-> Each project includes: goal → architecture → steps → key decisions → improvements.
+---
+
+## Project roadmap
+> Each project includes: **goal → architecture → implementation → key decisions → improvements**
 
 1. **Infrastructure Basics (Cloud & Bare Metal)**  
-   Secure VM and node setup, networking, and IAM fundamentals with a cost-aware approach.  
-   → `projects/cloud-infra-basics.md`
+   Core infrastructure concepts: networking, access, firewalling, and cost-aware design.  
+   → `projects/infra-basics.md`
 
-2. **Containerized App**  
-   Dockerfile (multi-stage), non-root execution, healthchecks.  
+2. **Ansible Node Bootstrap**  
+   Automated, idempotent Linux node preparation and hardening for Kubernetes.  
+   → `projects/ansible-node-bootstrap.md`
+
+3. **k3s Kubernetes Cluster**  
+   Building and operating a lightweight Kubernetes platform on prepared nodes.  
+   → `projects/k3s-cluster.md`
+
+4. **Containerized Application**  
+   Application containerization with secure Docker practices.  
    → `projects/containerized-app.md`
 
-3. **CI/CD Pipeline**  
+5. **CI/CD Pipeline**  
    Automated build, test, and image publishing with proper secrets handling.  
    → `projects/ci-cd-pipeline.md`
 
-4. **Kubernetes on k3s (Raw Manifests)**  
-   Application deployment on k3s using Deployment, Service, Ingress, ConfigMap, and Secret.  
+6. **Kubernetes Manifests (Raw YAML)**  
+   Application deployment on k3s using core Kubernetes primitives.  
    → `projects/kubernetes-manifests.md`
 
-5. **Helm Chart**  
-   Refactor raw Kubernetes manifests into a reusable Helm chart with dev/prod values and rollback support.  
+7. **Helm Chart**  
+   Refactoring raw manifests into reusable, versioned Helm charts with rollback support.  
    → `projects/helm-chart.md`
 
-6. **Terraform Platform**  
-   Infrastructure provisioning using Terraform with apply/destroy workflows and cost controls.  
+8. **Terraform Platform (Optional / Cloud)**  
+   Infrastructure provisioning concepts using Terraform with cost controls and teardown workflows.  
    → `projects/terraform-platform.md`
 
-7. **DevSecOps Tooling**  
-   Security scanning, policy enforcement, and hardening practices (optional Go-based tooling).  
+9. **DevSecOps Tooling**  
+   Security scanning, hardening, and policy-driven improvements across the platform.  
    → `projects/devsecops-tooling.md`
+
+---
 
 ## How to run projects
 Each project repository includes:
@@ -59,11 +76,23 @@ Each project repository includes:
 - commands to run
 - teardown steps (where applicable)
 
+---
+
 ## Cost & safety notes
-- Local-first Kubernetes using k3s (Raspberry Pi and macOS) to keep costs near zero
+- **Local-first Kubernetes** using k3s on Raspberry Pi and macOS to minimize cost
 - Cloud resources are created only when required and destroyed immediately
 - Secrets are never committed to git
 
+---
+
+## Design philosophy
+- Infrastructure before automation
+- Automation before platforms
+- Platforms before applications
+- Security and least privilege by default
+- Cloud-native patterns that also work on bare metal
+
+---
+
 ## Contact
 - LinkedIn: tbd
-- CV: tbd
